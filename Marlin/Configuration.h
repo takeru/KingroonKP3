@@ -150,9 +150,6 @@
 //#define REVERSE_E_MOTOR_DIRECTION
 #define CUSTOM_ESTEPS_VALUE 463
 
-// If you are using a pancake stepper enable the PANCAKE_STEPPER option to reduce the motor current to lower the stepper temperature
-//#define PANCAKE_STEPPER
-
 // THERMISTOR SETTINGS -----------------------------
 
 // If you are using an E3D V6 Hotend with their cartridge thermistor (not glass version) uncomment the below line.
