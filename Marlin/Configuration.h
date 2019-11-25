@@ -119,7 +119,7 @@
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "TH3D KP-3.V1"
+#define CUSTOM_MACHINE_NAME "TH3D KP-3.V2"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like http://www.uuidgenerator.net/version4
@@ -166,7 +166,7 @@
  *    10 : 100k RS thermistor 198-961 (4.7k pullup)
  *    11 : 100k beta 3950 1% thermistor (4.7k pullup)
  *    12 : 100k 0603 SMD Vishay NTCS0603E3104FXT (4.7k pullup) (calibrated for Makibox hot bed)
- *    13 : 100k Hisens 3950  1% up to 300°C for hotend "Simple ONE " & "Hotend "All In ONE"
+ *    13 : 100k Hisens 3950  1% up to 300�C for hotend "Simple ONE " & "Hotend "All In ONE"
  *    15 : 100k thermistor calibration for JGAurora A5 hotend
  *    18 : ATC Semitec 204GT-2 (4.7k pullup) Dagoma.Fr - MKS_Base_DKU001327
  *    20 : Pt100 with circuit in the Ultimainboard V2.x
@@ -192,10 +192,10 @@
  *  1000 : Custom - Specify parameters in Configuration_adv.h
  *
  *         Use these for Testing or Development purposes. NEVER for production machine.
- *   998 : Dummy Table that ALWAYS reads 25°C or the temperature defined below.
- *   999 : Dummy Table that ALWAYS reads 100°C or the temperature defined below.
+ *   998 : Dummy Table that ALWAYS reads 25�C or the temperature defined below.
+ *   999 : Dummy Table that ALWAYS reads 100�C or the temperature defined below.
  *
- * :{ '0':"Not used", '1':"100k / 4.7k - EPCOS", '331':"(3.3V thermistor 1)", '2':"200k / 4.7k - ATC Semitec 204GT-2", '3':"Mendel-parts / 4.7k", '4':"10k !! do not use for a hotend. Bad resolution at high temp. !!", '5':"100K / 4.7k - ATC Semitec 104GT-2 (Used in ParCan & J-Head)", '501':"100K Zonestar (Tronxy X3A)", '512':"100k RPW-Ultra hotend thermistor", '6':"100k / 4.7k EPCOS - Not as accurate as Table 1", '7':"100k / 4.7k Honeywell 135-104LAG-J01", '8':"100k / 4.7k 0603 SMD Vishay NTCS0603E3104FXT", '9':"100k / 4.7k GE Sensing AL03006-58.2K-97-G1", '10':"100k / 4.7k RS 198-961", '11':"100k / 4.7k beta 3950 1%", '12':"100k / 4.7k 0603 SMD Vishay NTCS0603E3104FXT (calibrated for Makibox hot bed)", '13':"100k Hisens 3950  1% up to 300°C for hotend 'Simple ONE ' & hotend 'All In ONE'", '18':"ATC Semitec 204GT-2 (4.7k pullup) Dagoma.Fr - MKS_Base_DKU001327" '20':"Pt100 (Ultimainboard V2.x)", '201':"Pt100 (Overlord)", '51':"100k / 1k - EPCOS", '52':"200k / 1k - ATC Semitec 204GT-2", '55':"100k / 1k - ATC Semitec 104GT-2 (Used in ParCan & J-Head)", '60':"100k Maker's Tool Works Kapton Bed Thermistor beta=3950", '61':"100k Formbot / Vivedino 3950 350C thermistor 4.7k pullup", '66':"Dyze Design 4.7M High Temperature thermistor", '67':"Slice Engineering 450C High Temperature thermistor", '70':"the 100K thermistor found in the bq Hephestos 2", '71':"100k / 4.7k Honeywell 135-104LAF-J01", '147':"Pt100 / 4.7k", '1047':"Pt1000 / 4.7k", '110':"Pt100 / 1k (non-standard)", '1010':"Pt1000 / 1k (non standard)", '-4':"Thermocouple + AD8495", '-3':"Thermocouple + MAX31855 (only for sensor 0)", '-2':"Thermocouple + MAX6675 (only for sensor 0)", '-1':"Thermocouple + AD595", '998':"Dummy 1", '999':"Dummy 2", '1000':"Custom thermistor params" }
+ * :{ '0':"Not used", '1':"100k / 4.7k - EPCOS", '331':"(3.3V thermistor 1)", '2':"200k / 4.7k - ATC Semitec 204GT-2", '3':"Mendel-parts / 4.7k", '4':"10k !! do not use for a hotend. Bad resolution at high temp. !!", '5':"100K / 4.7k - ATC Semitec 104GT-2 (Used in ParCan & J-Head)", '501':"100K Zonestar (Tronxy X3A)", '512':"100k RPW-Ultra hotend thermistor", '6':"100k / 4.7k EPCOS - Not as accurate as Table 1", '7':"100k / 4.7k Honeywell 135-104LAG-J01", '8':"100k / 4.7k 0603 SMD Vishay NTCS0603E3104FXT", '9':"100k / 4.7k GE Sensing AL03006-58.2K-97-G1", '10':"100k / 4.7k RS 198-961", '11':"100k / 4.7k beta 3950 1%", '12':"100k / 4.7k 0603 SMD Vishay NTCS0603E3104FXT (calibrated for Makibox hot bed)", '13':"100k Hisens 3950  1% up to 300�C for hotend 'Simple ONE ' & hotend 'All In ONE'", '18':"ATC Semitec 204GT-2 (4.7k pullup) Dagoma.Fr - MKS_Base_DKU001327" '20':"Pt100 (Ultimainboard V2.x)", '201':"Pt100 (Overlord)", '51':"100k / 1k - EPCOS", '52':"200k / 1k - ATC Semitec 204GT-2", '55':"100k / 1k - ATC Semitec 104GT-2 (Used in ParCan & J-Head)", '60':"100k Maker's Tool Works Kapton Bed Thermistor beta=3950", '61':"100k Formbot / Vivedino 3950 350C thermistor 4.7k pullup", '66':"Dyze Design 4.7M High Temperature thermistor", '67':"Slice Engineering 450C High Temperature thermistor", '70':"the 100K thermistor found in the bq Hephestos 2", '71':"100k / 4.7k Honeywell 135-104LAF-J01", '147':"Pt100 / 4.7k", '1047':"Pt1000 / 4.7k", '110':"Pt100 / 1k (non-standard)", '1010':"Pt1000 / 1k (non standard)", '-4':"Thermocouple + AD8495", '-3':"Thermocouple + MAX31855 (only for sensor 0)", '-2':"Thermocouple + MAX6675 (only for sensor 0)", '-1':"Thermocouple + AD595", '998':"Dummy 1", '999':"Dummy 2", '1000':"Custom thermistor params" }
  */
 #define TEMP_SENSOR_0 1
 #define TEMP_SENSOR_1 0
@@ -207,12 +207,12 @@
 #define TEMP_SENSOR_CHAMBER 0
 
 #define TEMP_RESIDENCY_TIME      5  // (seconds) Time to wait for hotend to "settle" in M109
-#define TEMP_WINDOW              1  // (°C) Temperature proximity for the "temperature reached" timer
-#define TEMP_HYSTERESIS          3  // (°C) Temperature proximity considered "close enough" to the target
+#define TEMP_WINDOW              1  // (�C) Temperature proximity for the "temperature reached" timer
+#define TEMP_HYSTERESIS          3  // (�C) Temperature proximity considered "close enough" to the target
 
 #define TEMP_BED_RESIDENCY_TIME  5  // (seconds) Time to wait for bed to "settle" in M190
-#define TEMP_BED_WINDOW          1  // (°C) Temperature proximity for the "temperature reached" timer
-#define TEMP_BED_HYSTERESIS      3  // (°C) Temperature proximity considered "close enough" to the target
+#define TEMP_BED_WINDOW          1  // (�C) Temperature proximity for the "temperature reached" timer
+#define TEMP_BED_HYSTERESIS      3  // (�C) Temperature proximity considered "close enough" to the target
 
 // Below this temperature the heater will be switched off
 // because it probably indicates a broken thermistor wire.
@@ -509,40 +509,14 @@
 #define DEFAULT_RETRACT_ACCELERATION  500    // E acceleration for retracts
 #define DEFAULT_TRAVEL_ACCELERATION   500    // X, Y, Z acceleration for travel (non printing) moves
 
-/**
- * Junction Deviation
- *
- * Use Junction Deviation instead of traditional Jerk Limiting
- *
- * See:
- *   https://reprap.org/forum/read.php?1,739819
- *   http://blog.kyneticcnc.com/2018/10/computing-junction-deviation-for-marlin.html
- */
-#define JUNCTION_DEVIATION
-#if ENABLED(JUNCTION_DEVIATION)
-  #define JUNCTION_DEVIATION_MM 0.05  // (mm) Distance from real junction edge
-#endif
-
-/**
- * Default Jerk (mm/s)
- * Override with M205 X Y Z E
- *
- * "Jerk" specifies the minimum speed change that requires acceleration.
- * When changing speed and direction, if the difference is less than the
- * value set here, it may happen instantaneously.
- */
-#if DISABLED(JUNCTION_DEVIATION)
-  #define DEFAULT_XJERK 10.0
-  #define DEFAULT_YJERK 10.0
-  #define DEFAULT_ZJERK  0.3
-#endif
+#define JUNCTION_DEVIATION_MM 0.013
 
 #define DEFAULT_EJERK    5.0  // May be used by Linear Advance
 
 /**
  * S-Curve Acceleration
  *
- * This option eliminates vibration during printing by fitting a Bézier
+ * This option eliminates vibration during printing by fitting a B�zier
  * curve to move acceleration, producing much smoother direction changes.
  *
  * See https://github.com/synthetos/TinyG/wiki/Jerk-Controlled-Motion-Explained
@@ -616,27 +590,27 @@
 //#define BLTOUCH
 
 /**
- * Z Probe to nozzle (X,Y) offset, relative to (0, 0).
- * X and Y offsets must be integers.
- *
- * In the following example the X and Y offsets are both positive:
- * #define X_PROBE_OFFSET_FROM_EXTRUDER 10
- * #define Y_PROBE_OFFSET_FROM_EXTRUDER 10
- *
- *     +-- BACK ---+
- *     |           |
- *   L |    (+) P  | R <-- probe (20,20)
- *   E |           | I
- *   F | (-) N (+) | G <-- nozzle (10,10)
- *   T |           | H
- *     |    (-)    | T
- *     |           |
- *     O-- FRONT --+
- *   (0,0)
- */
-#define X_PROBE_OFFSET_FROM_EXTRUDER 0  // X offset: -left  +right  [of the nozzle]
-#define Y_PROBE_OFFSET_FROM_EXTRUDER 0  // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER 0   // Z offset: -below +above  [the nozzle]
+* Z Probe to nozzle (X,Y) offset, relative to (0, 0).
+*
+* In the following example the X and Y offsets are both positive:
+*
+*   #define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }
+*
+*     +-- BACK ---+
+*     |           |
+*   L |    (+) P  | R <-- probe (20,20)
+*   E |           | I
+*   F | (-) N (+) | G <-- nozzle (10,10)
+*   T |           | H
+*     |    (-)    | T
+*     |           |
+*     O-- FRONT --+
+*   (0,0)
+*
+* Specify a Probe position as { X, Y, Z }
+* Do NOT enter an number for the Z position in here. Store your offset in EEPROM.
+*/
+#define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 10
@@ -915,8 +889,8 @@
   #if ENABLED(G26_MESH_VALIDATION)
     #define MESH_TEST_NOZZLE_SIZE    0.4  // (mm) Diameter of primary nozzle.
     #define MESH_TEST_LAYER_HEIGHT   0.2  // (mm) Default layer height for the G26 Mesh Validation Tool.
-    #define MESH_TEST_HOTEND_TEMP  205    // (°C) Default nozzle temperature for the G26 Mesh Validation Tool.
-    #define MESH_TEST_BED_TEMP      60    // (°C) Default bed temperature for the G26 Mesh Validation Tool.
+    #define MESH_TEST_HOTEND_TEMP  205    // (�C) Default nozzle temperature for the G26 Mesh Validation Tool.
+    #define MESH_TEST_BED_TEMP      60    // (�C) Default bed temperature for the G26 Mesh Validation Tool.
     #define G26_XY_FEEDRATE         20    // (mm/s) Feedrate for XY Moves for the G26 Mesh Validation Tool.
   #endif
 
@@ -1159,6 +1133,7 @@
  *
  * :{ 'en':'English', 'an':'Aragonese', 'bg':'Bulgarian', 'ca':'Catalan', 'cz':'Czech', 'da':'Danish', 'de':'German', 'el':'Greek', 'el-gr':'Greek (Greece)', 'es':'Spanish', 'eu':'Basque-Euskera', 'fi':'Finnish', 'fr':'French', 'gl':'Galician', 'hr':'Croatian', 'it':'Italian', 'jp-kana':'Japanese', 'ko_KR':'Korean (South Korea)', 'nl':'Dutch', 'pl':'Polish', 'pt':'Portuguese', 'pt-br':'Portuguese (Brazilian)', 'ru':'Russian', 'sk':'Slovak', 'tr':'Turkish', 'uk':'Ukrainian', 'vi':'Vietnamese', 'zh_CN':'Chinese (Simplified)', 'zh_TW':'Chinese (Traditional)', 'test':'TEST' }
  */
+
 #define LCD_LANGUAGE en
 
 /**
@@ -1232,8 +1207,8 @@
 //
 #define TOUCH_BUTTONS
 #if ENABLED(TOUCH_BUTTONS)
-  #define BUTTON_DELAY_EDIT  50 // (ms) Button repeat delay for edit screens
-  #define BUTTON_DELAY_MENU 250 // (ms) Button repeat delay for menus
+  #define BUTTON_DELAY_EDIT 150 // (ms) Button repeat delay for edit screens
+  #define BUTTON_DELAY_MENU 200 // (ms) Button repeat delay for menus
 
   #define XPT2046_X_CALIBRATION   12316
   #define XPT2046_Y_CALIBRATION  -8981

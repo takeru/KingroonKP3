@@ -125,7 +125,7 @@
   #define LCD_BACKLIGHT_PIN PD13
 
   #if ENABLED(TOUCH_BUTTONS)
-    #define TOUCH_CS_PIN   PC2
+    #define TOUCH_CS_PIN     PC2
     #define TOUCH_SCK_PIN    PB13
     #define TOUCH_MOSI_PIN   PB15
     #define TOUCH_MISO_PIN   PB14
@@ -146,7 +146,7 @@
 #define MOTOR_CURRENT_PWM_Z_PIN    PA7
 #define MOTOR_CURRENT_PWM_E_PIN    PB0
 #define MOTOR_CURRENT_PWM_RANGE    1500 // (255 * (1000mA / 65535)) * 257 = 1000 is equal 1.6v Vref in turn equal 1Amp
-#define DEFAULT_PWM_MOTOR_CURRENT  { 900, 800, 900 } // 1.05Amp per driver, here is XY, Z and E. This values determined empirically.
+#define DEFAULT_PWM_MOTOR_CURRENT  { 1000, 1000, 1000 } // 1.05Amp per driver, here is XY, Z and E. This values determined empirically.
 
 // This is a kind of workaround in case native marlin "digipot" interface won't work.
 // Required to enable related code in STM32F1/HAL.cpp

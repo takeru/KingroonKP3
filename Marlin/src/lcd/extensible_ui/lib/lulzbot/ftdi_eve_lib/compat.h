@@ -197,6 +197,7 @@
   #define SERIAL_ECHO_START()
   #define SERIAL_ECHOLNPGM(str)        Serial.println(F(str))
   #define SERIAL_ECHOPGM(str)          Serial.print(F(str))
+  #define SERIAL_ECHO_MSG(str)         Serial.println(str)
   #define SERIAL_ECHOLNPAIR(str, val) {Serial.print(F(str)); Serial.println(val);}
   #define SERIAL_ECHOPAIR(str, val)   {Serial.print(F(str)); Serial.print(val);}
 
@@ -208,7 +209,8 @@
   #define SWITCH_ENABLED_    1
   #define ENABLED(b)         _CAT(SWITCH_ENABLED_, b)
   #define DISABLED(b)        !ENABLED(b)
-  #define ANY(A,B)           ENABLED(A) || ENABLED(B)
+  #define ANY(A,B)           (ENABLED(A) || ENABLED(B))
+  #define BOTH(A,B)          (ENABLED(A) && ENABLED(B))
 
   // Remove compiler warning on an unused variable
   #ifndef UNUSED
