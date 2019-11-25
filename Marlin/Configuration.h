@@ -1168,14 +1168,25 @@
 #define LCD_INFO_SCREEN_STYLE 0
 
 /**
- * SD CARD
+* SD CARD
+*
+* SD Card support is disabled by default. If your controller has an SD slot,
+* you must uncomment the following option or it won't work.
+*
+*/
+#define SDSUPPORT
+#define SDIO_SUPPORT
+
+#define SPI_SPEED SPI_HALF_SPEED
+//#define SPI_SPEED SPI_QUARTER_SPEED
+//#define SPI_SPEED SPI_EIGHTH_SPEED
+
+/**
+ * SD CARD: ENABLE CRC
  *
- * SD Card support is disabled by default. If your controller has an SD slot,
- * you must uncomment the following option or it won't work.
- *
+ * Use CRC checks and retries on the SD communication.
  */
- #define SDSUPPORT
- #define SDIO_SUPPORT
+#define SD_CHECK_AND_RETRY
 
 //
 // Individual Axis Homing
