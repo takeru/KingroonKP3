@@ -59,8 +59,8 @@
     #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 95 }
 	#endif
   
-  #define DEFAULT_MAX_FEEDRATE          { 300, 300, 5, 25 }
-  #define DEFAULT_MAX_ACCELERATION      { 3000, 3000, 100, 10000 }
+  #define DEFAULT_MAX_FEEDRATE          { 300, 300, 15, 50 }
+  #define DEFAULT_MAX_ACCELERATION      { 3000, 3000, 500, 10000 }
 
   #define DEFAULT_ACCELERATION          500
   #define DEFAULT_RETRACT_ACCELERATION  500
@@ -84,8 +84,8 @@
   #define Y_HOME_DIR -1
   #define Z_HOME_DIR -1
 
-  #define X_BED_SIZE 180
-  #define Y_BED_SIZE 180
+  #define X_BED_SIZE 170
+  #define Y_BED_SIZE 170
 
   #if ENABLED(HOME_ADJUST)
     #define X_MIN_POS X_HOME_LOCATION
@@ -264,7 +264,7 @@
 #define VALIDATE_HOMING_ENDSTOPS
 
 #if ENABLED(EZABL_SUPERFASTPROBE)
-  #define HOMING_FEEDRATE_Z  (30*60)
+  #define HOMING_FEEDRATE_Z  (15*60)
 #elif DISABLED(EZABL_FASTPROBE)
   #define HOMING_FEEDRATE_Z  (4*60)
 #else
