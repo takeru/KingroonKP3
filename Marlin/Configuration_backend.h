@@ -15,6 +15,10 @@
 #if ENABLED(CUSTOM_PROBE)
   #define EZABL_ENABLE
 #endif
+#if ENABLED(KP3_OEM_MOUNT)
+  #define NOZZLE_TO_PROBE_OFFSET { -46, -15, 0 }
+  #define EZABL_ENABLE
+#endif
 
 #if ENABLED(KINGROON_KP3)
   #define SERIAL_PORT 3

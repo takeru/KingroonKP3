@@ -50,6 +50,7 @@
 //#define KINGROON_KP3
 
 // EZABL Probe Mounts
+//#define KP3_OEM_MOUNT
 //#define CUSTOM_PROBE
 
 //===========================================================================
@@ -70,7 +71,7 @@
 // You can do down to 10mm on the Wanhao i3 since it cannot print on the entire bed.
 // You can do down to 5mm on the Wanhao i3 Mini since it cannot print on the entire bed.
 // (only used if EZABL enabled)
-#define EZABL_PROBE_EDGE 35
+#define EZABL_PROBE_EDGE 15
 
 // If you have issues with your machine running the faster probe setting disable the #define EZABL_FASTPROBE below.
 // DO NOTE: Most machines will work with the fast probe enabled. Use M48 to verify accuracy.
