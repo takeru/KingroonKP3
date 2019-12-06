@@ -216,8 +216,7 @@
 
 // LINEAR ADVANCE ----------------------------------
 // See here on how to use Linear Advance: http://marlinfw.org/docs/features/lin_advance.html
-//
-#define LINEAR_ADVANCE
+//#define LINEAR_ADVANCE
 // Change the K Value here or use M900 KX.XX in your starting code (recommended).
 #define LINEAR_ADVANCE_K 0
 
@@ -258,4 +257,4 @@
 
 #include "Configuration_backend.h"
 
-#define UNIFIED_VERSION "TH3D KP3.V2a"
+#define UNIFIED_VERSION "TH3D KP3.V3"
