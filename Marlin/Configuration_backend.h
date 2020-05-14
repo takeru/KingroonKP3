@@ -66,9 +66,30 @@
   #define DEFAULT_RETRACT_ACCELERATION  500
   #define DEFAULT_TRAVEL_ACCELERATION   500
   
-  #define INVERT_X_DIR false
-  #define INVERT_Y_DIR false
-  #define INVERT_Z_DIR true
+  #if ENABLED(REVERSE_ALL_MOTOR_DIRECTION)
+		#define REVERSE_X_MOTOR_DIRECTION
+		#define REVERSE_Y_MOTOR_DIRECTION
+		#define REVERSE_Z_MOTOR_DIRECTION
+		#define REVERSE_E_MOTOR_DIRECTION
+	#endif
+	
+	#if ENABLED(REVERSE_X_MOTOR_DIRECTION)
+    #define INVERT_X_DIR true
+  #else
+    #define INVERT_X_DIR false
+  #endif
+	
+	#if ENABLED(REVERSE_Y_MOTOR_DIRECTION)
+    #define INVERT_Y_DIR true
+  #else
+    #define INVERT_Y_DIR false
+  #endif
+	
+	#if ENABLED(REVERSE_Z_MOTOR_DIRECTION)
+    #define INVERT_Z_DIR false
+  #else
+    #define INVERT_Z_DIR true
+  #endif
 
   #if ENABLED(REVERSE_E_MOTOR_DIRECTION)
     #define INVERT_E0_DIR true
@@ -299,11 +320,7 @@
     #define PROBING_HEATERS_OFF
   #endif
 
-  #if ENABLED(EZABL_SUPERFASTPROBE)
-    #define MULTIPLE_PROBING 3
-  #else
-    #define MULTIPLE_PROBING 2
-  #endif
+  #define MULTIPLE_PROBING 2
 
   #if ENABLED(BLTOUCH)
     #define Z_CLEARANCE_DEPLOY_PROBE   15

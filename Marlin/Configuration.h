@@ -54,6 +54,21 @@
 //#define CUSTOM_PROBE
 
 //===========================================================================
+// Motor Direction Settings
+//===========================================================================
+// Some new KP3 models have their motors wired reverse from the early batches. If your motors move the wrong direction
+// uncomment the option the axis that needs reversal and then re-upload the firmware to the printer.
+
+// Reverse ALL motor directions
+//#define REVERSE_ALL_MOTOR_DIRECTION
+
+// Reverse specific motor directions (these are all enabled if you uncomment REVERSE_ALL_MOTOR_DIRECTION in the backend).
+//#define REVERSE_X_MOTOR_DIRECTION
+//#define REVERSE_Y_MOTOR_DIRECTION
+//#define REVERSE_Z_MOTOR_DIRECTION
+//#define REVERSE_E_MOTOR_DIRECTION
+
+//===========================================================================
 // *************************  END PRINTER SECTION   *************************
 //===========================================================================
 
@@ -257,4 +272,4 @@
 
 #include "Configuration_backend.h"
 
-#define UNIFIED_VERSION "TH3D KP3.V3"
+#define UNIFIED_VERSION "TH3D KP3.V4"
