@@ -2,7 +2,7 @@
 
 **Current Board Support for this Version**
 
-- Kingroon KP3 using MKS Robin Nano
+- Kingroon KP3 using MKS Robin Mini
 
 **The issues queue has been disabled as some people do not understand it's for firmware problems and not technical support.**
 
